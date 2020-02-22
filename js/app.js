@@ -16,14 +16,14 @@ function disableButton() {
 }
 
 function showImage() {
-    images[indexInImages].classList.toggle('active');
+    images[indexInImages].classList.remove('active');
     if (event.target === prevButton) {
         indexInImages -= 1;
     } else if (event.target === nextButton) {
         indexInImages += 1;
     }
 
-    images[indexInImages].classList.toggle('active');  
+    images[indexInImages].classList.add('active');  
 }
 
 function handleClick(event) {
